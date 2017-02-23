@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.6)
 
-project(ASIBOT_OPENRAVE_MODELS)
+project(AsibotOpenRAVEModels)
 
 find_package(YARP REQUIRED)
 
@@ -11,6 +11,8 @@ include(YarpInstallationHelpers)
 yarp_configure_external_installation(asibot)
 
 yarp_install(DIRECTORY openrave DESTINATION ${ASIBOT_CONTEXTS_INSTALL_DIR})
+
+export(PACKAGE ${PROJECT_NAME})
 
 configure_file("${CMAKE_SOURCE_DIR}/cmake/template/ASIBOT_OPENRAVE_MODELSConfigUninstall.cmake.in"
                "${CMAKE_BINARY_DIR}/ASIBOT_OPENRAVE_MODELSConfigUninstall.cmake" @ONLY)
