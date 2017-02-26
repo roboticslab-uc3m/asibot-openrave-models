@@ -1,4 +1,4 @@
-[![Asibot-main Homepage](https://img.shields.io/badge/asibot-openrave-models-orange.svg)](http://robots.uc3m.es/dox-asibot-main) [![Latest Release](https://img.shields.io/github/tag/roboticslab-uc3m/asibot-openrave-models.svg?label=Latest Release)](https://github.com/roboticslab-uc3m/asibot-openrave-models/tags)
+[![Asibot-main Homepage](https://img.shields.io/badge/asibot-main-orange.svg)](http://robots.uc3m.es/dox-asibot-main) [![Latest Release](https://img.shields.io/github/tag/roboticslab-uc3m/asibot-openrave-models.svg?label=Latest Release)](https://github.com/roboticslab-uc3m/asibot-openrave-models/tags)
 
 3D OpenRAVE models for [ASIBOT](http://robots.uc3m.es/dox-asibot-main) robot. If you are looking for the source code of the robot itself, visit the [asibot-main](https://github.com/roboticslab-uc3m/asibot-main) repository.
 
