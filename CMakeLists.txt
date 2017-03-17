@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.9)
 
 # Define a project.
-project(AsibotOpenRAVEModels)
+project(ASIBOT_OPENRAVE_MODELS)
 
 # Find YARP and load configuration, fail otherwise.
 find_package(YARP REQUIRED)
@@ -38,30 +38,30 @@ endif()
 set(ASIBOT_MODELS_CONTEXTS_INSTALL_DIR "${ASIBOT_CONTEXTS_INSTALL_DIR}/${models_dir}")
 
 # Configure <project>Config.cmake file (build tree).
-configure_package_config_file("${CMAKE_SOURCE_DIR}/cmake/template/AsibotOpenRAVEModelsConfig.cmake.in"
-                              "${CMAKE_BINARY_DIR}/AsibotOpenRAVEModelsConfig.cmake"
+configure_package_config_file("${CMAKE_SOURCE_DIR}/cmake/template/ASIBOT_OPENRAVE_MODELSConfig.cmake.in"
+                              "${CMAKE_BINARY_DIR}/ASIBOT_OPENRAVE_MODELSConfig.cmake"
                               INSTALL_DESTINATION "${CMAKE_BINARY_DIR}"
                               INSTALL_PREFIX "${CMAKE_BINARY_DIR}"
                               PATH_VARS ASIBOT_MODELS_CONTEXTS_INSTALL_DIR
                               NO_CHECK_REQUIRED_COMPONENTS_MACRO)
 
 # Configure <project>Config.cmake file (install tree).
-configure_package_config_file("${CMAKE_SOURCE_DIR}/cmake/template/AsibotOpenRAVEModelsConfig.cmake.in"
-                              "${CMAKE_BINARY_DIR}/AsibotOpenRAVEModelsConfigForInstall.cmake"
+configure_package_config_file("${CMAKE_SOURCE_DIR}/cmake/template/ASIBOT_OPENRAVE_MODELSConfig.cmake.in"
+                              "${CMAKE_BINARY_DIR}/ASIBOT_OPENRAVE_MODELSConfigForInstall.cmake"
                               INSTALL_DESTINATION "${ASIBOT_MODELS_CMAKE_DESTINATION}"
                               PATH_VARS ASIBOT_MODELS_CONTEXTS_INSTALL_DIR
                               NO_CHECK_REQUIRED_COMPONENTS_MACRO)
 
 # Rename and install <project>Config.cmake file (install tree).
-install(FILES "${CMAKE_BINARY_DIR}/AsibotOpenRAVEModelsConfigForInstall.cmake"
-        RENAME AsibotOpenRAVEModelsConfig.cmake
+install(FILES "${CMAKE_BINARY_DIR}/ASIBOT_OPENRAVE_MODELSConfigForInstall.cmake"
+        RENAME ASIBOT_OPENRAVE_MODELSConfig.cmake
         DESTINATION "${ASIBOT_MODELS_CMAKE_DESTINATION}")
 
 # Configure CMake uninstall script.
-configure_file("${CMAKE_SOURCE_DIR}/cmake/template/AsibotOpenRAVEModelsConfigUninstall.cmake.in"
-               "${CMAKE_BINARY_DIR}/AsibotOpenRAVEModelsConfigUninstall.cmake" @ONLY)
+configure_file("${CMAKE_SOURCE_DIR}/cmake/template/ASIBOT_OPENRAVE_MODELSConfigUninstall.cmake.in"
+               "${CMAKE_BINARY_DIR}/ASIBOT_OPENRAVE_MODELSConfigUninstall.cmake" @ONLY)
 
 # Add uninstall rule.
 add_custom_target(uninstall COMMAND ${CMAKE_COMMAND} -P
-                  "${CMAKE_BINARY_DIR}/AsibotOpenRAVEModelsConfigUninstall.cmake")
+                  "${CMAKE_BINARY_DIR}/ASIBOT_OPENRAVE_MODELSConfigUninstall.cmake")
 

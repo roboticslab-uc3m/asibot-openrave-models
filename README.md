@@ -4,7 +4,7 @@
 
 ## Installation
 
-Installation instructions for installing from source can be found [here](doc/asibot_openrave_models_install.md).
+Installation instructions for installing from source can be found [here](doc/asibot-openrave-models-install.md).
 
 ## Contributing
 
