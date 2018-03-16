@@ -31,9 +31,9 @@ include(GNUInstallDirs)
 
 # Set installation path for CMake files.
 if(WIN32)
-    set(ASIBOT_MODELS_CMAKE_DESTINATION "CMake")
+    set(${PROJECT_NAME}_CMAKE_DESTINATION "CMake")
 else()
-    set(ASIBOT_MODELS_CMAKE_DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}")
+    set(${PROJECT_NAME}_CMAKE_DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}")
 endif()
 
 # Create dummy CMake configuration export file.
@@ -41,7 +41,7 @@ file(WRITE ${CMAKE_BINARY_DIR}/${PROJECT_NAME}Config.cmake "# Dummy CMake config
 
 # Install CMake configuration file.
 install(FILES ${CMAKE_BINARY_DIR}/${PROJECT_NAME}Config.cmake
-        DESTINATION ${PROJECT_NAME}_CMAKE_DESTINATION)
+        DESTINATION ${${PROJECT_NAME}_CMAKE_DESTINATION})
 
 # Add uninstall rule.
 include(AddUninstallTarget)
