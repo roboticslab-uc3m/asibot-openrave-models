@@ -1,27 +1,23 @@
-cmake_minimum_required(VERSION 2.8.9)
+cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
 # Define a project.
-project(ASIBOT_OPENRAVE_MODELS)
+project(ASIBOT_OPENRAVE_MODELS LANGUAGES NONE)
 
-# Load custom CMake modules.
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+# Find dependencies
+find_package(YCM 0.8 REQUIRED)
 
-# Find YARP and load configuration, fail otherwise.
-find_package(YARP REQUIRED)
-
-# Make YARP's modules visible to current CMake file.
-list(APPEND CMAKE_MODULE_PATH ${YARP_MODULE_PATH})
-
-# Load yarp_configure_external_installation() and yarp_install().
-include(YarpInstallationHelpers)
+# https://github.com/roboticslab-uc3m/questions-and-answers/issues/65
+find_package(YARP 3.0 QUIET)
+if(NOT YARP_FOUND)
+    find_package(YARP 2.3.70 REQUIRED)
+endif()
 
 # Set some useful variables - paths relative to the installation prefix.
 yarp_configure_external_installation(asibot)
 
-set(models_dir openrave)
-
 # Configure install rule, copy models to the build directory.
-yarp_install(DIRECTORY ${models_dir} DESTINATION ${ASIBOT_CONTEXTS_INSTALL_DIR})
+yarp_install(DIRECTORY openrave
+             DESTINATION ${ASIBOT_CONTEXTS_INSTALL_DIR})
 
 # Store this package in the user registry.
 export(PACKAGE ${PROJECT_NAME})
@@ -37,7 +33,8 @@ else()
 endif()
 
 # Create dummy CMake configuration export file.
-file(WRITE ${CMAKE_BINARY_DIR}/${PROJECT_NAME}Config.cmake "# Dummy CMake configuration export file.")
+file(WRITE ${CMAKE_BINARY_DIR}/${PROJECT_NAME}Config.cmake
+     "# Dummy CMake configuration export file.")
 
 # Install CMake configuration file.
 install(FILES ${CMAKE_BINARY_DIR}/${PROJECT_NAME}Config.cmake
