@@ -35,7 +35,7 @@
         <body>link0</body>
         <body>link1</body>
         <axis>0 0 1</axis>
-        <maxvel>2</maxvel>
+        <maxveldeg>30</maxveldeg>
     </Joint>
     <Body name="link2">
         <offsetfrom>link0</offsetfrom>
@@ -56,7 +56,7 @@
         <axis>0 1 0</axis>
         <anchor>0 0 0.165</anchor>
         <limitsdeg>-135 135</limitsdeg>
-        <maxvel>2</maxvel>
+        <maxveldeg>30</maxveldeg>
     </Joint>
     <Body name="link3">
         <offsetfrom>link0</offsetfrom>
@@ -77,7 +77,7 @@
         <axis>0 1 0</axis>
         <anchor>0 0 0.563</anchor>
         <limitsdeg>-135 135</limitsdeg>
-        <maxvel>2</maxvel>
+        <maxveldeg>30</maxveldeg>
       </Joint>
     <Body name="link4">
         <offsetfrom>link0</offsetfrom>
@@ -99,7 +99,7 @@
         <axis>0 1 0</axis>
         <anchor>0 0 0.962</anchor>
         <limitsdeg>-135 135</limitsdeg>
-        <maxvel>2</maxvel>
+        <maxveldeg>30</maxveldeg>
     </Joint>
     <Body name="link5">
         <offsetfrom>link0</offsetfrom>
@@ -126,7 +126,7 @@
         <body>link5</body>
         <axis>0 0 1</axis>
         <anchor>0 0 1</anchor>
-        <maxvel>2</maxvel>
+        <maxveldeg>30</maxveldeg>
     </Joint>
     <!-- no joint limits -->
 </KinBody>

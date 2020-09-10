@@ -20,7 +20,7 @@
         <axis>1 0 0</axis>
         <anchor>0 0 0</anchor>
         <limitsdeg>-5 5</limitsdeg>
-        <maxvel>2</maxvel>
+        <maxveldeg>30</maxveldeg>
     </Joint>
     <Body name="link2">
         <Geom type="box">
@@ -35,7 +35,7 @@
         <axis>0 1 0</axis>
         <anchor>0 0 0</anchor>
         <limitsdeg>-5 5</limitsdeg>
-        <maxvel>2</maxvel>
+        <maxveldeg>30</maxveldeg>
     </Joint>
     <Body name="link3">
         <Geom type="box">
@@ -50,7 +50,7 @@
         <axis>0 0 1</axis>
         <anchor>0 0 0</anchor>
         <limitsdeg>-5 5</limitsdeg>
-        <maxvel>2</maxvel>
+        <maxveldeg>30</maxveldeg>
     </Joint>
     <Body name="link4">
         <Geom type="box">
@@ -65,7 +65,7 @@
         <axis>1 0 0</axis>
         <anchor>0 0 0</anchor>
         <limitsdeg>-90 90</limitsdeg>
-        <maxvel>2</maxvel>
+        <maxveldeg>30</maxveldeg>
     </Joint>
     <Body name="link5">
         <Geom type="box">
@@ -80,7 +80,7 @@
         <axis>0 1 0</axis>
         <anchor>0 0 0</anchor>
         <limitsdeg>-90 90</limitsdeg>
-        <maxvel>2</maxvel>
+        <maxveldeg>30</maxveldeg>
     </Joint>
     <Body name="link6">
         <Geom type="box">
@@ -95,7 +95,7 @@
         <axis>0 0 1</axis>
         <anchor>0 0 0</anchor>
         <limitsdeg>-90 90</limitsdeg>
-        <maxvel>2</maxvel>
+        <maxveldeg>30</maxveldeg>
     </Joint>
 
 </KinBody>

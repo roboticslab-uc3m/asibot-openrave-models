@@ -1,6 +1,4 @@
-[![Asibot-main Homepage](https://img.shields.io/badge/asibot-main-orange.svg)](http://robots.uc3m.es/dox-asibot-main) [![Latest Release](https://img.shields.io/github/tag/roboticslab-uc3m/asibot-openrave-models.svg?label=Latest%20release)](https://github.com/roboticslab-uc3m/asibot-openrave-models/tags)
-
-3D OpenRAVE models for [ASIBOT](http://robots.uc3m.es/dox-asibot-main) robot. If you are looking for the source code of the robot itself, visit the [asibot-main](https://github.com/roboticslab-uc3m/asibot-main) repository.
+3D OpenRAVE models for ASIBOT robot. If you are looking for the source code of the robot itself, visit the [asibot-main](https://github.com/roboticslab-uc3m/asibot-main) repository.
 
 ## Installation
 
@@ -22,9 +20,5 @@ Installation instructions for installing from source can be found [here](doc/asi
 5. Create a new Pull Request
 
 ## Status
-
-[![Build Status (Linux/OSX)](https://img.shields.io/travis/roboticslab-uc3m/asibot-openrave-models/master.svg?label=Build Status (Linux/OSX))](https://travis-ci.org/roboticslab-uc3m/asibot-openrave-models)
-
-[![Coverage Status](https://coveralls.io/repos/roboticslab-uc3m/asibot-openrave-models/badge.svg)](https://coveralls.io/r/roboticslab-uc3m/asibot-openrave-models)
 
 [![Issues](https://img.shields.io/github/issues/roboticslab-uc3m/asibot-openrave-models.svg?label=Issues)](https://github.com/roboticslab-uc3m/asibot-openrave-models/issues)
